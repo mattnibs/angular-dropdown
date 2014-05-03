@@ -1,11 +1,24 @@
 {
-	"name": "mnibecker/angular-dropdown",
-	"version": "1.0.0",
-	"dependencies": {
-		"angular": "1.2.1"
-	},
-	"keywords:": [
-		"angularjs",
-		"dropdown"
-	]
+  "name": "mnibecker/angular-dropdown",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "1.2.1"
+  },
+  "keywords:": [
+    "angularjs",
+    "dropdown"
+  ],
+  "homepage": "https://github.com/mnibecker/angular-dropdown",
+  "authors": [
+    "Matt Nibecker <mnibecke@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
 }
