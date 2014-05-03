@@ -1,0 +1,18 @@
+dropdown {
+    display:block;
+}
+dropdown .btn.error{
+    border: 1px solid #da4f49 !important;
+}
+dropdown .dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+}
+dropdown .dropdown-menu {
+    box-sizing: border-box;
+    padding: 2px;
+}
+dropdown .dropdown-menu > li > a {
+    padding: 3px 10px;
+    cursor:pointer;
+}
