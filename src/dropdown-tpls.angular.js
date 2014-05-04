@@ -1,11 +1,11 @@
-angular.module('ui.dropdown', []);
+angular.module('ui.dropdown', ['dropdown.tmpl.html']);
 
 angular.module('ui.dropdown').directive('dropdown', ['$document',
     function($document) {
         return {
             restrict: 'E',
             transclude: true,
-            templateUrl: '/src/dropdown.tmpl.html',
+            templateUrl: 'dropdown.tmpl.html',
             scope: {
                 dropdownTitle: '=',
                 dropdownClass: '@'
@@ -48,14 +48,14 @@ angular.module('ui.dropdown').directive('dropdown', ['$document',
     }
 ]);
 
-angular.module('dropdown-tpls.angular.js', [])
-.run(['$templateCache', function($templateCache) {
-    $templateCahce.put('dropdown-tpls.angular.js',
+angular.module('dropdown.tmpl.html', []).run(['$templateCache', function($templateCache) {
+    $templateCache.put('dropdown.tmpl.html',
+
         "<div class=\"dropdown\">\n" +
-            "<button ng-click=\"toggleSelect()\">\n" +
-                "<span >{{dropdownTitle}}</span>\n" +
-                "<span class=\"caret\"></span>\n" +
-            "</button>\n" +
-            "<div class=\"dropdown-menu\" ng-transclude></div>\n" +
+        "   <button ng-click=\"toggleSelect()\">\n" +
+        "       <span >{{dropdownTitle}}</span>\n" +
+        "       <span class=\"caret\"></span>\n" +
+        "   </button>\n" +
+        "   <div class=\"dropdown-menu\" ng-transclude></div>\n" +
         "</div>\n");
 }])
